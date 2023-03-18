@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url(./reset.css);
+
+* {
+    /* outline: 1px dotted #333; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.light-text {
+    opacity: 0.5;
+}
+
+.semi-light-text {
+    opacity: 0.8;
+}
+
+/* menu */
+.menu {
+    background: rgb(20, 20, 20);
+    padding: 1em 10em;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 1em;
+
+    position: absolute;
+    top: -16%;
+
+    transition: all 0.4s ease;
+}
+
+.show-full-menu {
+    top: 0%;
+}
+
+.menu-top {
+    width: 100%;
+    display: flex;
+    gap: 2em;
+}
+
+.menu-left {
+    flex: 3;
+    line-height: 1.5;
+}
+
+.menu-left p {
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.menu-right {
+    flex: 1;
+    line-height: 1.5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.menu-right a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.menu-bottom {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-bottom>div {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.5em;
+}
+
+/* menu end */
+
+/* header */
+header {
+    height: 70vh;
+    padding: 0 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+header p {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+header div a {
+    padding: 0.5em;
+    text-decoration: none;
+    background: #529dff;
+    color: #fff;
+    border-radius: 0.25rem;
+    margin: 0.25em;
+
+    transition: all 0.3s ease;
+}
+
+header div a:hover{
+    background: #2483ff;
+}
+
+header div a:nth-child(2) {
+    background: #999999;
+}
+
+header div a:nth-child(2):hover{
+    background: #808080;
+}
+
+/* header end */
+
+/* main */
+main {
+    background: #ededed;
+    padding: 3em 13em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.card {
+    width: 31.2%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3rem;
+    border: 1px solid #dedede;
+    box-shadow: 15px 15px 20px #dadada;
+}
+
+.thumbnail {
+    flex: 1.75;
+    background: url(../images/thumbnail.png);
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+
+.card-content {
+    flex: 1;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.card-content p {
+    line-height: 1.5;
+}
+
+.card-content div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-content div div a {
+    padding: 0.5em;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000000cc;
+    
+    transition: all 0.3s ease;
+}
+
+.card-content div div a:hover{
+    background: #000000cc;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.card-content div div:nth-child(2) {
+    font-size: 0.8rem;
+}
+
+/* main end */
+
+footer {
+    height: 25vh;
+    padding: 0 15em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer>div {
+    line-height: 2;
+}
+
+footer a {
+    text-decoration: none;
+    color: #529dff;
+}
